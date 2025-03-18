@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals & Aspirations - Kyhl Hines</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coverletter.html">Cover Letter</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="goals.html" class="active">Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Goals & Aspirations Content -->
+    <main>
+        <section id="goals">
+            <div class="goals-container">
+                <h2>🎯 My Goals & Aspirations</h2>
+                <p>Setting clear goals helps me stay focused and continue growing both professionally and personally.</p>
+
+                <div class="goal-section">
+                    <h3>📌 Short-Term Goals</h3>
+                    <ul>
+                        <li>Complete my <strong>Bachelor of Science in Software Engineering</strong> at Western Governors University.</li>
+                        <li>Earn advanced certifications in <strong>Cloud Computing (AWS, Azure)</strong> and <strong>Cybersecurity (CISSP, CEH, OSCP).</strong></li>
+                        <li>Contribute to open-source projects related to <strong>AI development and cybersecurity automation.</strong></li>
+                        <li>Refine my proficiency in <strong>Python, JavaScript, and DevOps tools</strong> to build scalable applications.</li>
+                        <li>Secure an internship or entry-level role in <strong>AI development or cloud security</strong> to gain hands-on experience.</li>
+                    </ul>
+                </div>
+
+                <div class="goal-section">
+                    <h3>🚀 Long-Term Goals</h3>
+                    <ul>
+                        <li><strong>Career Advancement:</strong> Become a <strong>Lead Software Engineer,</strong> <strong>Solutions Architect,</strong> or <strong>Cybersecurity Consultant</strong> within a top-tier tech company.</li>
+                        <li><strong>Entrepreneurship:</strong> Develop and launch an <strong>AI-driven startup,</strong> focusing on <strong>automation, cybersecurity, and cloud solutions.</strong></li>
+                        <li><strong>Thought Leadership:</strong> Become a <strong>recognized expert in AI security,</strong>speaking at tech conferences and contributing to research papers.</li>
+                        <li><strong>Mentorship & Teaching:</strong> Guide aspiring developers and security engineers through <strong>online courses, workshops, and community engagements.</strong></li>
+                        <li><strong>Innovative Projects:</strong> Work on projects that <strong>bridge AI and cybersecurity,</strong> ensuring ethical AI development and secure AI-based solutions.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Kyhl Hines. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Daftitude" target="_blank" class="footer-link">
+                    <img src="images/GitHUB-icon.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/kyhl-hines-45896517b/" target="_blank" class="footer-link">
+                    <img src="images/LinkedIn-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.daftitude.com/" target="_blank" class="footer-link">
+                    <img src="images/D LOGO.png" alt="Website">
+                </a>
+                <a href="mailto:Kyhl_Hines@yahoo.com" class="footer-link">
+                    <img src="images/email-icon.png" alt="Email Me">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">⬆ Back to Top</button>
+
+    <script>
+        // Show/hide Back to Top button based on scroll position
+        window.onscroll = function () {
+            let btn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.classList.add("show");
+            } else {
+                btn.classList.remove("show");
+            }
+        };
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+
+</body>
+
+</html>

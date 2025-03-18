@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Kyhl Hines</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coverletter.html">Cover Letter</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="goals.html">Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Resume Section -->
+    <main>
+        <section id="resume">
+            <div class="resume-container">
+                <h2>📄 My Resume</h2>
+                <p>Explore my professional experience, skills, and certifications:</p>
+
+                <div class="resume-section">
+                    <h3>💼 Work Experience</h3>
+                    <div class="resume-item">
+                        <h4>Network Administrator - Jacobs, U.S. Army Special Operations Command</h4>
+                        <p><em>November 2022 – November 2024</em></p>
+                        <ul>
+                            <li>Managed and optimized network systems (LAN/WAN) for military IT environments.</li>
+                            <li>Developed PowerShell and Python automation scripts.</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>System Administrator - SAIC, U.S. Army Reserves Command</h4>
+                        <p><em>January 2022 – September 2022</em></p>
+                        <ul>
+                            <li>Administered DHCP, Remote Desktop Servers, and Active Directory.</li>
+                            <li>Implemented security updates and maintained virtual environments.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h3>🎓 Education</h3>
+                    <p>Bachelor of Science in Software Engineering (In Progress) - Western Governors University</p>
+                </div>
+
+                <div class="resume-section">
+                    <h3>🔧 Skills</h3>
+                    <ul>
+                        <li><strong>Programming:</strong> JavaScript, Python, SQL, C#, PowerShell</li>
+                        <li><strong>Networking:</strong> CCNA, CASP, VMware, SIPR/NIPR administration</li>
+                        <li><strong>Cloud & DevOps:</strong> AWS, Docker, Jenkins, Git</li>
+                    </ul>
+                </div>
+
+                <div class="resume-section">
+                    <h3>📜 Certifications</h3>
+                    <ul>
+                        <li>CCNA - Cisco Certified Network Associate</li>
+                        <li>CASP - CompTIA Advanced Security Practitioner</li>
+                        <li>JavaScript & Python Certification - Codecademy</li>
+                    </ul>
+                </div>
+
+                <!-- Download Button -->
+                <a href="media/Kyhl Hines 2025 Resume (AL).pdf" download class="btn download-btn">📥 Download Resume</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Kyhl Hines. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Daftitude" target="_blank" class="footer-link">
+                    <img src="images/GitHUB-icon.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/kyhl-hines-45896517b/" target="_blank" class="footer-link">
+                    <img src="images/LinkedIn-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.daftitude.com/" target="_blank" class="footer-link">
+                    <img src="images/D LOGO.png" alt="Website">
+                </a>
+                <a href="mailto:Kyhl_Hines@yahoo.com" class="footer-link">
+                    <img src="images/email-icon.png" alt="Email Me">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">⬆ Back to Top</button>
+
+    <script>
+        // Show/hide Back to Top button based on scroll position
+        window.onscroll = function () {
+            let btn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.classList.add("show");
+            } else {
+                btn.classList.remove("show");
+            }
+        };
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+
+</body>
+
+</html>
