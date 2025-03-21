@@ -651,23 +651,6 @@ nav ul li a.active {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.goals-container h2 {
-    font-size: 2.2em;
-    color: #1abc9c;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: bold;
-}
-
-.goals-container p {
-    font-size: 1.2em;
-    color: #d1d5db;
-    line-height: 1.8;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
 .goal-section {
     margin-bottom: 30px;
     padding: 25px;
@@ -685,50 +668,48 @@ nav ul li a.active {
     text-transform: uppercase;
 }
 
-.goal-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
+/* Contact Form Styling */
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    max-width: 700px;
 }
 
-.goal-section li {
-    padding: 15px;
-    font-size: 1.2em;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1.6;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    text-align: center;
-    width: 100%;
-    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
-}
-
-/* Icons for Goals */
-.goal-section li::before {
-    content: "🚀";
-    color: #ffd700;
+form label {
     font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
-
-/* Goal Text Formatting */
-.goal-section li strong {
-    font-weight: bold;
-    color: #ffd700;
-}
-
-.goal-section li em {
-    font-style: italic;
     color: #d1d5db;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+form input[type="submit"] {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    padding: 12px 20px;
+    border-radius: 6px;
+    width: auto;
+}
+
+form input[type="submit"]:hover {
+    background-color: #16a085;
 }
 
 /* Active Navigation Styling */
@@ -774,4 +755,10 @@ footer {
 
 .footer-link:hover {
     transform: scale(1.2);
+}
+
+.video-embed {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }

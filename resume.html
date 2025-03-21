@@ -27,7 +27,9 @@
         <section id="resume">
             <div class="resume-container">
                 <h2>📄 My Resume</h2>
-                <p>Explore my professional experience, skills, and certifications:</p>
+                <p><span style="color: #ffd700;">Welcome</span> to my professional resume page.<br>Below you will find details about my background and experience.</p>
+                <hr>
+                <div id="currentDate">Date will appear here</div>
 
                 <div class="resume-section">
                     <h3>💼 Work Experience</h3>
@@ -51,7 +53,27 @@
 
                 <div class="resume-section">
                     <h3>🎓 Education</h3>
-                    <p>Bachelor of Science in Software Engineering (In Progress) - Western Governors University</p>
+                    <table border="1">
+                        <caption>Degrees and Progress</caption>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>Status</th>
+                            <th>Year</th>
+                        </tr>
+                        <tr>
+                            <td>B.S. Software Engineering</td>
+                            <td>Western Governors University</td>
+                            <td>In Progress</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>A.A.S. IT Support</td>
+                            <td>Fayetteville Tech</td>
+                            <td>Completed</td>
+                            <td>2017</td>
+                        </tr>
+                    </table>
                 </div>
 
                 <div class="resume-section">
@@ -70,6 +92,7 @@
                         <li>CASP - CompTIA Advanced Security Practitioner</li>
                         <li>JavaScript & Python Certification - Codecademy</li>
                     </ul>
+                    <p>Visit my <a href="https://www.linkedin.com/in/kyhl-hines-45896517b/" target="_blank">LinkedIn</a> for more.</p>
                 </div>
 
                 <!-- Download Button -->
@@ -98,6 +121,7 @@
             </div>
         </div>
     </footer>
+
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" onclick="scrollToTop()">⬆ Back to Top</button>
 
@@ -116,6 +140,10 @@
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
+
+        // Populate current date and console log
+        document.getElementById("currentDate").textContent = "Today's date: " + new Date().toLocaleDateString();
+        console.log("Resume page loaded successfully.");
     </script>
 
 </body>
